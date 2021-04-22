@@ -1,4 +1,18 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
-<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="1" systemVersion="11A491" minimumToolsVersion="Automatic" sourceLanguage="Swift" usedWithCloudKit="false" userDefinedModelVersionIdentifier="">
-    <elements/>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="17511" systemVersion="20D64" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Finance" representedClassName="Finance" syncable="YES">
+        <attribute name="date" optional="YES" attributeType="Date" usesScalarValueType="NO"/>
+        <attribute name="descr" optional="YES" attributeType="String"/>
+        <attribute name="inOut" optional="YES" attributeType="Boolean" usesScalarValueType="YES"/>
+        <relationship name="parentCategory" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="User" inverseName="finances" inverseEntity="User"/>
+    </entity>
+    <entity name="User" representedClassName="User" syncable="YES">
+        <attribute name="password" attributeType="String"/>
+        <attribute name="userName" attributeType="String"/>
+        <relationship name="finances" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Finance" inverseName="parentCategory" inverseEntity="Finance"/>
+    </entity>
+    <elements>
+        <element name="User" positionX="-9" positionY="36" width="128" height="74"/>
+        <element name="Finance" positionX="-9" positionY="36" width="128" height="89"/>
+    </elements>
 </model>

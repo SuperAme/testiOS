@@ -22,6 +22,10 @@
 		D63C8E3126321E3A007314F3 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C8E3026321E3A007314F3 /* AlertView.xib */; };
 		D63C8E3426321E47007314F3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E3326321E47007314F3 /* AlertView.swift */; };
 		D63C8E632632336C007314F3 /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E622632336C007314F3 /* ExchangeModel.swift */; };
+		D63C8E692632357C007314F3 /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E652632357C007314F3 /* User+CoreDataClass.swift */; };
+		D63C8E6A2632357C007314F3 /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E662632357C007314F3 /* User+CoreDataProperties.swift */; };
+		D63C8E6B2632357C007314F3 /* Finance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E672632357C007314F3 /* Finance+CoreDataClass.swift */; };
+		D63C8E6C2632357C007314F3 /* Finance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E682632357C007314F3 /* Finance+CoreDataProperties.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +46,10 @@
 		D63C8E3026321E3A007314F3 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		D63C8E3326321E47007314F3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		D63C8E622632336C007314F3 /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		D63C8E652632357C007314F3 /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		D63C8E662632357C007314F3 /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
+		D63C8E672632357C007314F3 /* Finance+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Finance+CoreDataClass.swift"; sourceTree = SOURCE_ROOT; };
+		D63C8E682632357C007314F3 /* Finance+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Finance+CoreDataProperties.swift"; sourceTree = SOURCE_ROOT; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -129,6 +137,10 @@
 		D63C8E61263232E6007314F3 /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				D63C8E652632357C007314F3 /* User+CoreDataClass.swift */,
+				D63C8E662632357C007314F3 /* User+CoreDataProperties.swift */,
+				D63C8E672632357C007314F3 /* Finance+CoreDataClass.swift */,
+				D63C8E682632357C007314F3 /* Finance+CoreDataProperties.swift */,
 				D63C8E622632336C007314F3 /* ExchangeModel.swift */,
 			);
 			path = Models;
@@ -206,14 +218,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D63C8E6B2632357C007314F3 /* Finance+CoreDataClass.swift in Sources */,
 				D63C8E632632336C007314F3 /* ExchangeModel.swift in Sources */,
 				D63C8E2126321921007314F3 /* Constants.swift in Sources */,
+				D63C8E6A2632357C007314F3 /* User+CoreDataProperties.swift in Sources */,
 				D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */,
 				D63C8E3426321E47007314F3 /* AlertView.swift in Sources */,
+				D63C8E6C2632357C007314F3 /* Finance+CoreDataProperties.swift in Sources */,
 				D63C8E2726321B15007314F3 /* RegisterViewController.swift in Sources */,
 				D63C8E2E26321E07007314F3 /* registerAlert.swift in Sources */,
 				D63C8E022632182A007314F3 /* AppDelegate.swift in Sources */,
 				D63C8E042632182A007314F3 /* SceneDelegate.swift in Sources */,
+				D63C8E692632357C007314F3 /* User+CoreDataClass.swift in Sources */,
 				D63C8E0C2632182A007314F3 /* testiOS.xcdatamodeld in Sources */,
 				D63C8E2426321AF9007314F3 /* DashboardViewController.swift in Sources */,
 			);
