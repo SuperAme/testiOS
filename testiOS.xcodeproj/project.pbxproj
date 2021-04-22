@@ -73,7 +73,6 @@
 			isa = PBXGroup;
 			children = (
 				D63C8E1F2632190F007314F3 /* Helpers */,
-				D63C8E1A263218CF007314F3 /* Models */,
 				D63C8E012632182A007314F3 /* AppDelegate.swift */,
 				D63C8E032632182A007314F3 /* SceneDelegate.swift */,
 				D63C8E1B263218E4007314F3 /* Controllers */,
@@ -84,13 +83,6 @@
 				D63C8E1E263218FB007314F3 /* DataModel */,
 			);
 			path = testiOS;
-			sourceTree = "<group>";
-		};
-		D63C8E1A263218CF007314F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		D63C8E1B263218E4007314F3 /* Controllers */ = {
