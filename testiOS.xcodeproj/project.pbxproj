@@ -72,6 +72,7 @@
 		D63C8E002632182A007314F3 /* testiOS */ = {
 			isa = PBXGroup;
 			children = (
+				D63C8E61263232E6007314F3 /* Models */,
 				D63C8E1F2632190F007314F3 /* Helpers */,
 				D63C8E012632182A007314F3 /* AppDelegate.swift */,
 				D63C8E032632182A007314F3 /* SceneDelegate.swift */,
@@ -121,6 +122,13 @@
 				D63C8E2026321921007314F3 /* Constants.swift */,
 			);
 			path = Helpers;
+			sourceTree = "<group>";
+		};
+		D63C8E61263232E6007314F3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Models;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
