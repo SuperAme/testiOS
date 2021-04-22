@@ -12,4 +12,8 @@ class DashboardViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
     }
+    @IBAction func addPressed(_ sender: UIBarButtonItem) {
+//        AlertView.instance.showAlert(title: "master", message: "Again", alertType: .failure)
+        registerAlert.instance.showAlert()
+    }
 }

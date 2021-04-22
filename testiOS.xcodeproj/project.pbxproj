@@ -17,6 +17,10 @@
 		D63C8E2126321921007314F3 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E2026321921007314F3 /* Constants.swift */; };
 		D63C8E2426321AF9007314F3 /* DashboardViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E2326321AF9007314F3 /* DashboardViewController.swift */; };
 		D63C8E2726321B15007314F3 /* RegisterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E2626321B15007314F3 /* RegisterViewController.swift */; };
+		D63C8E2B26321DB9007314F3 /* registerAlert.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C8E2A26321DB9007314F3 /* registerAlert.xib */; };
+		D63C8E2E26321E07007314F3 /* registerAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E2D26321E07007314F3 /* registerAlert.swift */; };
+		D63C8E3126321E3A007314F3 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C8E3026321E3A007314F3 /* AlertView.xib */; };
+		D63C8E3426321E47007314F3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E3326321E47007314F3 /* AlertView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -32,6 +36,10 @@
 		D63C8E2026321921007314F3 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
 		D63C8E2326321AF9007314F3 /* DashboardViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DashboardViewController.swift; sourceTree = "<group>"; };
 		D63C8E2626321B15007314F3 /* RegisterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RegisterViewController.swift; sourceTree = "<group>"; };
+		D63C8E2A26321DB9007314F3 /* registerAlert.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = registerAlert.xib; sourceTree = "<group>"; };
+		D63C8E2D26321E07007314F3 /* registerAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = registerAlert.swift; sourceTree = "<group>"; };
+		D63C8E3026321E3A007314F3 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
+		D63C8E3326321E47007314F3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -99,6 +107,10 @@
 			isa = PBXGroup;
 			children = (
 				D63C8E072632182A007314F3 /* Main.storyboard */,
+				D63C8E2A26321DB9007314F3 /* registerAlert.xib */,
+				D63C8E2D26321E07007314F3 /* registerAlert.swift */,
+				D63C8E3026321E3A007314F3 /* AlertView.xib */,
+				D63C8E3326321E47007314F3 /* AlertView.swift */,
 			);
 			path = Views;
 			sourceTree = "<group>";
@@ -178,7 +190,9 @@
 			files = (
 				D63C8E112632182E007314F3 /* LaunchScreen.storyboard in Resources */,
 				D63C8E0E2632182E007314F3 /* Assets.xcassets in Resources */,
+				D63C8E3126321E3A007314F3 /* AlertView.xib in Resources */,
 				D63C8E092632182A007314F3 /* Main.storyboard in Resources */,
+				D63C8E2B26321DB9007314F3 /* registerAlert.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -191,7 +205,9 @@
 			files = (
 				D63C8E2126321921007314F3 /* Constants.swift in Sources */,
 				D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */,
+				D63C8E3426321E47007314F3 /* AlertView.swift in Sources */,
 				D63C8E2726321B15007314F3 /* RegisterViewController.swift in Sources */,
+				D63C8E2E26321E07007314F3 /* registerAlert.swift in Sources */,
 				D63C8E022632182A007314F3 /* AppDelegate.swift in Sources */,
 				D63C8E042632182A007314F3 /* SceneDelegate.swift in Sources */,
 				D63C8E0C2632182A007314F3 /* testiOS.xcdatamodeld in Sources */,
