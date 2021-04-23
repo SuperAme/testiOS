@@ -9,10 +9,10 @@
     <entity name="User" representedClassName="User" syncable="YES">
         <attribute name="password" attributeType="String"/>
         <attribute name="userName" attributeType="String"/>
-        <relationship name="finances" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Finance" inverseName="parentCategory" inverseEntity="Finance"/>
+        <relationship name="finances" optional="YES" toMany="YES" deletionRule="Nullify" destinationEntity="Finance" inverseName="parentCategory" inverseEntity="Finance"/>
     </entity>
     <elements>
-        <element name="User" positionX="-9" positionY="36" width="128" height="74"/>
-        <element name="Finance" positionX="-9" positionY="36" width="128" height="89"/>
+        <element name="Finance" positionX="-9" positionY="36" width="128" height="103"/>
+        <element name="User" positionX="-301.5505981445312" positionY="30.7738037109375" width="128" height="88"/>
     </elements>
 </model>

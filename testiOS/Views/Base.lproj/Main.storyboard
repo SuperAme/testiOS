@@ -114,7 +114,7 @@
                     </view>
                     <navigationItem key="navigationItem" id="mkI-7N-Le5">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SHS-i0-5ur">
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SHS-i0-5ur">
                             <rect key="frame" x="139.5" y="5.5" width="135" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
@@ -172,6 +172,9 @@
                                             <constraint firstAttribute="width" constant="60" id="XK4-J0-d9B"/>
                                         </constraints>
                                         <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="registerPressed:" destination="L3J-o6-tqO" eventType="touchUpInside" id="aBp-DW-aRa"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -185,6 +188,10 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="24g-dB-hm2"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="9F6-Vw-omK" id="Vlp-bG-pCv"/>
+                        <outlet property="userNameTextField" destination="GTN-2q-aoS" id="D9q-y5-ZIx"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GiA-sV-GKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
