@@ -2,7 +2,7 @@
 //  User+CoreDataProperties.swift
 //  testiOS
 //
-//  Created by IDS Comercial on 22/04/21.
+//  Created by IDS Comercial on 23/04/21.
 //
 //
 

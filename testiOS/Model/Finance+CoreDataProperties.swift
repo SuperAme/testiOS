@@ -2,7 +2,7 @@
 //  Finance+CoreDataProperties.swift
 //  testiOS
 //
-//  Created by IDS Comercial on 22/04/21.
+//  Created by IDS Comercial on 23/04/21.
 //
 //
 
@@ -16,9 +16,9 @@ extension Finance {
         return NSFetchRequest<Finance>(entityName: "Finance")
     }
 
-    @NSManaged public var inOut: Bool
     @NSManaged public var date: Date?
     @NSManaged public var descr: String?
+    @NSManaged public var inOut: String?
     @NSManaged public var parentCategory: User?
 
 }
