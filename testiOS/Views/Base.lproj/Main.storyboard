@@ -48,7 +48,7 @@
                                         </constraints>
                                         <state key="normal" title="Log In"/>
                                         <connections>
-                                            <segue destination="Qtj-Ia-BDa" kind="show" id="bnq-0p-Sc0"/>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2im-Yd-JaJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-zs-YYL">
@@ -75,6 +75,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qbt-4n-9UN"/>
+                    <connections>
+                        <outlet property="passwordTextField" destination="X9i-fj-L2B" id="Zlh-SO-n9p"/>
+                        <outlet property="userTextField" destination="7j4-c1-pKu" id="1cx-v9-crM"/>
+                        <segue destination="Qtj-Ia-BDa" kind="show" identifier="loginSegue" id="tbs-x7-8fK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -179,6 +184,9 @@
                                             <constraint firstAttribute="width" constant="60" id="XK4-J0-d9B"/>
                                         </constraints>
                                         <state key="normal" title="Register"/>
+                                        <connections>
+                                            <action selector="registerButton:" destination="L3J-o6-tqO" eventType="touchUpInside" id="gu6-iu-rHA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -192,6 +200,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="24g-dB-hm2"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="GTN-2q-aoS" id="c8d-kj-b9T"/>
+                        <outlet property="passwordTextField" destination="9F6-Vw-omK" id="AYB-eG-jzL"/>
+                        <outlet property="registerBtn" destination="LZE-Fw-nCK" id="zly-hH-tf6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GiA-sV-GKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,6 +251,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="SPh-wD-YX9"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="kyW-Ew-lQz" secondAttribute="bottom" id="ESc-TL-5LH"/>
@@ -277,6 +291,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dd1-6z-omJ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Td2-X2-ZHk" secondAttribute="bottom" id="2ew-gH-ioU"/>
