@@ -3,6 +3,7 @@
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
@@ -37,28 +38,32 @@
                                             <constraint firstAttribute="width" constant="250" id="pu0-oA-dzJ"/>
                                         </constraints>
                                         <fontDescription key="fontDescription" type="system" pointSize="14"/>
-                                        <textInputTraits key="textInputTraits"/>
+                                        <textInputTraits key="textInputTraits" secureTextEntry="YES"/>
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="x3Y-r9-Cl0">
                                         <rect key="frame" x="167" y="162" width="60" height="35"/>
-                                        <color key="backgroundColor" red="0.7516288364" green="0.7516288364" blue="0.7516288364" alpha="0.79728210860000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="MKO-XR-7dU"/>
                                             <constraint firstAttribute="width" constant="60" id="cKE-Lf-322"/>
                                         </constraints>
-                                        <state key="normal" title="Log In"/>
+                                        <state key="normal" title="Log In">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
-                                            <segue destination="Qtj-Ia-BDa" kind="show" id="bnq-0p-Sc0"/>
+                                            <action selector="loginButton:" destination="BYZ-38-t0r" eventType="touchUpInside" id="2im-Yd-JaJ"/>
                                         </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4kj-zs-YYL">
                                         <rect key="frame" x="156" y="243" width="82" height="35"/>
-                                        <color key="backgroundColor" red="0.7516288364" green="0.7516288364" blue="0.7516288364" alpha="0.79728210860000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="width" constant="82" id="Bqw-Bb-owA"/>
                                             <constraint firstAttribute="height" constant="35" id="WCs-2e-o7V"/>
                                         </constraints>
-                                        <state key="normal" title="Create User"/>
+                                        <state key="normal" title="Create User">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
                                         <connections>
                                             <segue destination="L3J-o6-tqO" kind="show" id="4N9-qN-Ym0"/>
                                         </connections>
@@ -75,6 +80,13 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="Qbt-4n-9UN"/>
+                    <connections>
+                        <outlet property="logInBtn" destination="x3Y-r9-Cl0" id="efs-Sf-C6z"/>
+                        <outlet property="passwordTextField" destination="X9i-fj-L2B" id="Zlh-SO-n9p"/>
+                        <outlet property="userBtn" destination="4kj-zs-YYL" id="WC1-tc-Jmn"/>
+                        <outlet property="userTextField" destination="7j4-c1-pKu" id="1cx-v9-crM"/>
+                        <segue destination="Qtj-Ia-BDa" kind="show" identifier="loginSegue" id="tbs-x7-8fK"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
@@ -117,7 +129,7 @@
                     <navigationItem key="navigationItem" id="mkI-7N-Le5">
                         <nil key="title"/>
                         <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SHS-i0-5ur">
-                            <rect key="frame" x="71.5" y="5.5" width="271" height="33"/>
+                            <rect key="frame" x="63.5" y="5.5" width="271" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="General"/>
@@ -129,6 +141,11 @@
                                 <action selector="segmentedControlPressed:" destination="Qtj-Ia-BDa" eventType="valueChanged" id="twO-Kr-VqO"/>
                             </connections>
                         </segmentedControl>
+                        <barButtonItem key="rightBarButtonItem" title="Logout" id="69X-kI-e0q">
+                            <connections>
+                                <action selector="logOutPressed:" destination="Qtj-Ia-BDa" id="dcu-Le-FBr"/>
+                            </connections>
+                        </barButtonItem>
                     </navigationItem>
                     <connections>
                         <outlet property="currencyView" destination="oHV-RB-3tn" id="wgK-cq-UEE"/>
@@ -173,12 +190,17 @@
                                     </textField>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="LZE-Fw-nCK">
                                         <rect key="frame" x="167" y="212" width="60" height="35"/>
-                                        <color key="backgroundColor" red="0.7516288364" green="0.7516288364" blue="0.7516288364" alpha="0.79728210860000004" colorSpace="custom" customColorSpace="displayP3"/>
+                                        <color key="backgroundColor" name="AccentColor"/>
                                         <constraints>
                                             <constraint firstAttribute="height" constant="35" id="Rug-Qi-F4I"/>
                                             <constraint firstAttribute="width" constant="60" id="XK4-J0-d9B"/>
                                         </constraints>
-                                        <state key="normal" title="Register"/>
+                                        <state key="normal" title="Register">
+                                            <color key="titleColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                        </state>
+                                        <connections>
+                                            <action selector="registerButton:" destination="L3J-o6-tqO" eventType="touchUpInside" id="gu6-iu-rHA"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -192,6 +214,11 @@
                         </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="24g-dB-hm2"/>
+                    <connections>
+                        <outlet property="emailTextField" destination="GTN-2q-aoS" id="c8d-kj-b9T"/>
+                        <outlet property="passwordTextField" destination="9F6-Vw-omK" id="AYB-eG-jzL"/>
+                        <outlet property="registerBtn" destination="LZE-Fw-nCK" id="zly-hH-tf6"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="GiA-sV-GKR" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -238,6 +265,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="SPh-wD-YX9"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="kyW-Ew-lQz" secondAttribute="bottom" id="ESc-TL-5LH"/>
@@ -277,6 +305,7 @@
                                 </prototypes>
                             </tableView>
                         </subviews>
+                        <viewLayoutGuide key="safeArea" id="dd1-6z-omJ"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
                             <constraint firstAttribute="bottom" secondItem="Td2-X2-ZHk" secondAttribute="bottom" id="2ew-gH-ioU"/>
@@ -297,6 +326,9 @@
     <resources>
         <image name="minus.circle" catalog="system" width="128" height="121"/>
         <image name="plus.circle" catalog="system" width="128" height="121"/>
+        <namedColor name="AccentColor">
+            <color red="0.0" green="0.46000000000000002" blue="0.89000000000000001" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

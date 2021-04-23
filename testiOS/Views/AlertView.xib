@@ -2,14 +2,13 @@
 <document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17506" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
     <device id="retina6_1" orientation="portrait" appearance="light"/>
     <dependencies>
-        <deployment identifier="iOS"/>
         <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17505"/>
         <capability name="Safe area layout guides" minToolsVersion="9.0"/>
         <capability name="System colors in document resources" minToolsVersion="11.0"/>
         <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
     </dependencies>
     <objects>
-        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="SuperHeroPedia" customModuleProvider="target">
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="AlertView" customModule="testiOS" customModuleProvider="target">
             <connections>
                 <outlet property="alertView" destination="6YY-bi-Fuo" id="80M-kq-hXI"/>
                 <outlet property="doneBtn" destination="Kb1-tW-0YO" id="5NH-T2-AzK"/>
@@ -58,8 +57,12 @@
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
                                 </label>
-                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="messagemessagemessagemessagemessagemessagemessagemessagemessagemessage" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCN-qr-Ahh">
-                                    <rect key="frame" x="20" y="108" width="440" height="41"/>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" verticalCompressionResistancePriority="749" textAlignment="center" lineBreakMode="tailTruncation" numberOfLines="4" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RCN-qr-Ahh">
+                                    <rect key="frame" x="20" y="93" width="440" height="67"/>
+                                    <constraints>
+                                        <constraint firstAttribute="height" relation="greaterThanOrEqual" constant="60" id="rF9-Q9-9HS"/>
+                                    </constraints>
+                                    <string key="text">messagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessagemessage</string>
                                     <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                     <nil key="textColor"/>
                                     <nil key="highlightedColor"/>
@@ -70,13 +73,13 @@
                                 <constraint firstItem="rb3-5s-boB" firstAttribute="centerX" secondItem="6YY-bi-Fuo" secondAttribute="centerX" id="4J2-y5-sgd"/>
                                 <constraint firstItem="J28-Rg-MZV" firstAttribute="leading" secondItem="6YY-bi-Fuo" secondAttribute="leading" constant="20" id="4rY-DK-2AD"/>
                                 <constraint firstAttribute="trailing" secondItem="RCN-qr-Ahh" secondAttribute="trailing" constant="20" id="5z8-WR-8ht"/>
-                                <constraint firstItem="Kb1-tW-0YO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RCN-qr-Ahh" secondAttribute="bottom" constant="20" id="6gd-dT-IJZ"/>
+                                <constraint firstItem="Kb1-tW-0YO" firstAttribute="top" relation="greaterThanOrEqual" secondItem="RCN-qr-Ahh" secondAttribute="bottom" constant="10" id="6gd-dT-IJZ"/>
                                 <constraint firstAttribute="height" constant="250" id="8oV-Xf-iTj"/>
                                 <constraint firstItem="Kb1-tW-0YO" firstAttribute="leading" secondItem="6YY-bi-Fuo" secondAttribute="leading" constant="20" id="GAI-Pr-tiq"/>
                                 <constraint firstItem="RCN-qr-Ahh" firstAttribute="leading" secondItem="6YY-bi-Fuo" secondAttribute="leading" constant="20" id="OjN-2F-rhk"/>
                                 <constraint firstAttribute="trailing" secondItem="Kb1-tW-0YO" secondAttribute="trailing" constant="20" id="R22-ze-ltQ"/>
                                 <constraint firstItem="rb3-5s-boB" firstAttribute="centerY" secondItem="6YY-bi-Fuo" secondAttribute="top" id="YxI-de-Cap"/>
-                                <constraint firstItem="RCN-qr-Ahh" firstAttribute="top" secondItem="J28-Rg-MZV" secondAttribute="bottom" constant="25" id="bFL-IE-W5d"/>
+                                <constraint firstItem="RCN-qr-Ahh" firstAttribute="top" secondItem="J28-Rg-MZV" secondAttribute="bottom" constant="10" id="bFL-IE-W5d"/>
                                 <constraint firstItem="J28-Rg-MZV" firstAttribute="top" secondItem="rb3-5s-boB" secondAttribute="bottom" constant="25" id="uWA-1L-dHB"/>
                                 <constraint firstAttribute="trailing" secondItem="J28-Rg-MZV" secondAttribute="trailing" constant="20" id="yGo-UE-aud"/>
                                 <constraint firstAttribute="bottom" secondItem="Kb1-tW-0YO" secondAttribute="bottom" constant="40" id="yHT-bL-Lzp"/>
@@ -111,4 +114,3 @@
         </systemColor>
     </resources>
 </document>
-
