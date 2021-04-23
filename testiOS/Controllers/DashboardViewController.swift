@@ -8,6 +8,7 @@
 import Foundation
 import UIKit
 import Firebase
+import CoreData
 
 class DashboardViewController: UIViewController {
     
@@ -15,11 +16,14 @@ class DashboardViewController: UIViewController {
     @IBOutlet weak var currencyView: UIView!
     @IBOutlet weak var segmentedCtrl: UISegmentedControl!
    
+    let context = (UIApplication.shared.delegate as! AppDelegate).persistentContainer.viewContext
+    var inOut = false
     
     override func viewDidLoad() {
         super.viewDidLoad()
         financeView.alpha = 1
         currencyView.alpha = 0
+        print(FileManager.default.urls(for: .documentDirectory, in: .userDomainMask))
     }
     
     @IBAction func segmentedControlPressed(_ sender: UISegmentedControl) {
@@ -63,15 +67,17 @@ class DashboardViewController: UIViewController {
         }))
         
         alert.addAction(UIAlertAction(title: "Agregar", style: .default, handler: { [weak self] _ in
-            guard let field = alert.textFields?[0], let field2 = alert.textFields?[1], let text = field.text, let text2 = field2.text , !text.isEmpty else {
+            guard let cuantity = alert.textFields?[0], let description = alert.textFields?[1], let text = cuantity.text, let text2 = description.text , !text.isEmpty else {
                 return
             }
             self!.segmentedCtrl.selectedSegmentIndex = 0
-            print(text+"++"+text2)
+            
+            self!.saveData(inOut: true, descr: description.text!, cuantity: Float(cuantity.text!)!)
         }))
         present(alert, animated: true)
     }
     func showMinusAlert() {
+        
         let alert = UIAlertController(title: "Agrega tu gasto", message: "", preferredStyle: .alert)
         alert.addTextField { (textField) in
             textField.placeholder = "Ingresa cantidad en numero"
@@ -86,13 +92,26 @@ class DashboardViewController: UIViewController {
         }))
         
         alert.addAction(UIAlertAction(title: "Agregar", style: .default, handler: { [weak self] _ in
-            guard let field = alert.textFields?[0], let field2 = alert.textFields?[1], let text = field.text, let text2 = field2.text , !text.isEmpty else {
+            guard let cuantity = alert.textFields?[0], let description = alert.textFields?[1], let text = cuantity.text, let text2 = description.text , !text.isEmpty else {
                 return
             }
             self!.segmentedCtrl.selectedSegmentIndex = 0
-            print(text+"++"+text2)
+            self!.saveData(inOut: false, descr: description.text!, cuantity: Float(cuantity.text!)!)
         }))
         present(alert, animated: true)
     }
+    
+    func saveData(inOut: Bool, descr: String, cuantity: Float) {
+        let newFinance = Finance(context: context)
+        newFinance.inOut = inOut
+        newFinance.descr = descr
+        newFinance.cuantity = cuantity
+        do {
+            try context.save()
+        } catch {
+            AlertView.instance.showAlert(title: "Error", message: "error saving Data", alertType: .failure)
+        }
+    }
+        
 }
 

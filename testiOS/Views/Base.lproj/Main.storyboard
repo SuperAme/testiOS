@@ -251,7 +251,7 @@
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
                             <tableView clipsSubviews="YES" contentMode="scaleToFill" alwaysBounceVertical="YES" dataMode="prototypes" style="plain" separatorStyle="default" rowHeight="-1" estimatedRowHeight="-1" sectionHeaderHeight="28" sectionFooterHeight="28" translatesAutoresizingMaskIntoConstraints="NO" id="kyW-Ew-lQz">
-                                <rect key="frame" x="0.0" y="0.0" width="414" height="774"/>
+                                <rect key="frame" x="0.0" y="0.0" width="414" height="659"/>
                                 <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                                 <prototypes>
                                     <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" reuseIdentifier="cell" id="Nmz-1J-LLP">
@@ -264,17 +264,34 @@
                                     </tableViewCell>
                                 </prototypes>
                             </tableView>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="0" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Uwl-ho-lze">
+                                <rect key="frame" x="80" y="685" width="255" height="47"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="255" id="Hjz-vv-s5A"/>
+                                    <constraint firstAttribute="height" constant="47" id="lxU-5G-NUw"/>
+                                </constraints>
+                                <fontDescription key="fontDescription" type="boldSystem" pointSize="30"/>
+                                <nil key="textColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="SPh-wD-YX9"/>
                         <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                         <constraints>
-                            <constraint firstAttribute="bottom" secondItem="kyW-Ew-lQz" secondAttribute="bottom" id="ESc-TL-5LH"/>
+                            <constraint firstItem="SPh-wD-YX9" firstAttribute="bottom" secondItem="Uwl-ho-lze" secondAttribute="bottom" constant="42" id="D34-RV-Xew"/>
                             <constraint firstItem="kyW-Ew-lQz" firstAttribute="top" secondItem="HnJ-eO-1BA" secondAttribute="top" id="PpL-5A-aVv"/>
+                            <constraint firstItem="Uwl-ho-lze" firstAttribute="leading" secondItem="SPh-wD-YX9" secondAttribute="leading" constant="80" id="QpI-Fr-yfA"/>
+                            <constraint firstItem="SPh-wD-YX9" firstAttribute="trailing" secondItem="Uwl-ho-lze" secondAttribute="trailing" constant="79" id="Sh8-zf-j4h"/>
                             <constraint firstItem="kyW-Ew-lQz" firstAttribute="leading" secondItem="HnJ-eO-1BA" secondAttribute="leading" id="V3y-kC-ei7"/>
+                            <constraint firstItem="Uwl-ho-lze" firstAttribute="top" secondItem="kyW-Ew-lQz" secondAttribute="bottom" constant="26" id="abh-96-hhh"/>
+                            <constraint firstItem="Uwl-ho-lze" firstAttribute="top" secondItem="kyW-Ew-lQz" secondAttribute="bottom" constant="26" id="aix-tr-cPx"/>
                             <constraint firstAttribute="trailing" secondItem="kyW-Ew-lQz" secondAttribute="trailing" id="cow-pb-QUO"/>
+                            <constraint firstItem="SPh-wD-YX9" firstAttribute="trailing" secondItem="Uwl-ho-lze" secondAttribute="trailing" constant="79" id="xbi-AK-8yR"/>
+                            <constraint firstItem="Uwl-ho-lze" firstAttribute="leading" secondItem="SPh-wD-YX9" secondAttribute="leading" constant="80" id="zZy-xu-3hp"/>
                         </constraints>
                     </view>
                     <connections>
+                        <outlet property="saldoLbl" destination="Uwl-ho-lze" id="vHU-Rt-DFx"/>
                         <outlet property="tableView" destination="kyW-Ew-lQz" id="mFR-dO-mGz"/>
                     </connections>
                 </viewController>

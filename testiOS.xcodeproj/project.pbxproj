@@ -9,6 +9,8 @@
 /* Begin PBXBuildFile section */
 		A8085F2246808A0FBA94203C /* Pods_testiOS.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = E2BC7FD1ED05003A37A5331F /* Pods_testiOS.framework */; };
 		D625483626336B5100AE82D6 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D625483526336B5100AE82D6 /* GoogleService-Info.plist */; };
+		D625484226336DCE00AE82D6 /* Finance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625484026336DCE00AE82D6 /* Finance+CoreDataClass.swift */; };
+		D625484326336DCE00AE82D6 /* Finance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D625484126336DCE00AE82D6 /* Finance+CoreDataProperties.swift */; };
 		D63C8E022632182A007314F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E012632182A007314F3 /* AppDelegate.swift */; };
 		D63C8E042632182A007314F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E032632182A007314F3 /* SceneDelegate.swift */; };
 		D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E052632182A007314F3 /* LoginViewController.swift */; };
@@ -31,6 +33,8 @@
 		3326C3AF8431E93DB3C34DDA /* Pods-testiOS.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testiOS.release.xcconfig"; path = "Target Support Files/Pods-testiOS/Pods-testiOS.release.xcconfig"; sourceTree = "<group>"; };
 		47674F1AA4F312815667EE43 /* Pods-testiOS.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-testiOS.debug.xcconfig"; path = "Target Support Files/Pods-testiOS/Pods-testiOS.debug.xcconfig"; sourceTree = "<group>"; };
 		D625483526336B5100AE82D6 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; path = "GoogleService-Info.plist"; sourceTree = "<group>"; };
+		D625484026336DCE00AE82D6 /* Finance+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Finance+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D625484126336DCE00AE82D6 /* Finance+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Finance+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D63C8DFE2632182A007314F3 /* testiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63C8E012632182A007314F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D63C8E032632182A007314F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -72,6 +76,15 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
+		D625484626336DDE00AE82D6 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				D625484026336DCE00AE82D6 /* Finance+CoreDataClass.swift */,
+				D625484126336DCE00AE82D6 /* Finance+CoreDataProperties.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
 		D63C8DF52632182A007314F3 = {
 			isa = PBXGroup;
 			children = (
@@ -93,7 +106,7 @@
 		D63C8E002632182A007314F3 /* testiOS */ = {
 			isa = PBXGroup;
 			children = (
-				D63C8E61263232E6007314F3 /* Models */,
+				D625484626336DDE00AE82D6 /* Models */,
 				D63C8E1F2632190F007314F3 /* Helpers */,
 				D63C8E012632182A007314F3 /* AppDelegate.swift */,
 				D63C8E032632182A007314F3 /* SceneDelegate.swift */,
@@ -146,13 +159,6 @@
 				D63C8E2026321921007314F3 /* Constants.swift */,
 			);
 			path = Helpers;
-			sourceTree = "<group>";
-		};
-		D63C8E61263232E6007314F3 /* Models */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Models;
 			sourceTree = "<group>";
 		};
 		F0B6475D9C596399E6299EAE /* Pods */ = {
@@ -287,6 +293,8 @@
 				D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */,
 				D63C8E3426321E47007314F3 /* AlertView.swift in Sources */,
 				D63C8E2726321B15007314F3 /* RegisterViewController.swift in Sources */,
+				D625484326336DCE00AE82D6 /* Finance+CoreDataProperties.swift in Sources */,
+				D625484226336DCE00AE82D6 /* Finance+CoreDataClass.swift in Sources */,
 				D63C8E2E26321E07007314F3 /* registerAlert.swift in Sources */,
 				D63C8E022632182A007314F3 /* AppDelegate.swift in Sources */,
 				D63C8E042632182A007314F3 /* SceneDelegate.swift in Sources */,
