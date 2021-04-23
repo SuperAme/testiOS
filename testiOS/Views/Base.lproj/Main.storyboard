@@ -114,20 +114,23 @@
                     </view>
                     <navigationItem key="navigationItem" id="mkI-7N-Le5">
                         <nil key="title"/>
-                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SHS-i0-5ur">
-                            <rect key="frame" x="139.5" y="5.5" width="135" height="33"/>
+                        <segmentedControl key="titleView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="top" segmentControlStyle="bar" selectedSegmentIndex="0" id="SHS-i0-5ur">
+                            <rect key="frame" x="71.5" y="5.5" width="271" height="33"/>
                             <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                             <segments>
                                 <segment title="General"/>
                                 <segment title="Divisas"/>
+                                <segment title="" image="plus.circle" catalog="system"/>
+                                <segment title="" image="minus.circle" catalog="system"/>
                             </segments>
-                        </segmentedControl>
-                        <barButtonItem key="rightBarButtonItem" systemItem="add" id="JcQ-JI-3Iz">
                             <connections>
-                                <action selector="addPressed:" destination="Qtj-Ia-BDa" id="3Ta-3B-tPo"/>
+                                <action selector="segmentedControlPressed:" destination="Qtj-Ia-BDa" eventType="valueChanged" id="twO-Kr-VqO"/>
                             </connections>
-                        </barButtonItem>
+                        </segmentedControl>
                     </navigationItem>
+                    <connections>
+                        <outlet property="segmentedCtrl" destination="SHS-i0-5ur" id="v79-Ze-QLI"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="j9l-yA-HFi" userLabel="First Responder" customClass="UIResponder" sceneMemberID="firstResponder"/>
             </objects>
@@ -210,6 +213,8 @@
         </scene>
     </scenes>
     <resources>
+        <image name="minus.circle" catalog="system" width="128" height="121"/>
+        <image name="plus.circle" catalog="system" width="128" height="121"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>
