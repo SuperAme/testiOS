@@ -9,10 +9,15 @@ import Foundation
 import UIKit
 
 class DashboardViewController: UIViewController {
+    
     @IBOutlet weak var segmentedCtrl: UISegmentedControl!
+    @IBOutlet weak var tableView: UITableView!
+    
+    var arreglo = ["arr","brr","crr"]
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        tableView.dataSource = self
     }
     
     @IBAction func segmentedControlPressed(_ sender: UISegmentedControl) {
@@ -20,7 +25,11 @@ class DashboardViewController: UIViewController {
         case 0:
             break;
         case 1:
-            break;
+            func prepare(for segue: UIStoryboardSegue, sender: Any?) {
+                if segue.identifier == "currencySegue" {
+                    let secondVC = segue.destination as! CurrenciesViewController
+                }
+            }
         case 2:
             showPlusAlert()
         case 3:
@@ -76,4 +85,18 @@ class DashboardViewController: UIViewController {
         }))
         present(alert, animated: true)
     }
+}
+extension DashboardViewController: UITableViewDataSource {
+    func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
+        
+        return arreglo.count
+    }
+    
+    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+        let cell = tableView.dequeueReusableCell(withIdentifier: "cell", for: indexPath)
+        cell.textLabel?.text = arreglo[indexPath.row]
+        return cell
+    }
+    
+    
 }

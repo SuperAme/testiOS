@@ -22,6 +22,7 @@
 		D63C8E3126321E3A007314F3 /* AlertView.xib in Resources */ = {isa = PBXBuildFile; fileRef = D63C8E3026321E3A007314F3 /* AlertView.xib */; };
 		D63C8E3426321E47007314F3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E3326321E47007314F3 /* AlertView.swift */; };
 		D63C8E632632336C007314F3 /* ExchangeModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E622632336C007314F3 /* ExchangeModel.swift */; };
+		D6844C5C26329DA700CB0962 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6844C5B26329DA700CB0962 /* CurrenciesViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -42,6 +43,7 @@
 		D63C8E3026321E3A007314F3 /* AlertView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = AlertView.xib; sourceTree = "<group>"; };
 		D63C8E3326321E47007314F3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		D63C8E622632336C007314F3 /* ExchangeModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeModel.swift; sourceTree = "<group>"; };
+		D6844C5B26329DA700CB0962 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -94,6 +96,7 @@
 				D63C8E052632182A007314F3 /* LoginViewController.swift */,
 				D63C8E2326321AF9007314F3 /* DashboardViewController.swift */,
 				D63C8E2626321B15007314F3 /* RegisterViewController.swift */,
+				D6844C5B26329DA700CB0962 /* CurrenciesViewController.swift */,
 			);
 			path = Controllers;
 			sourceTree = "<group>";
@@ -207,6 +210,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D63C8E632632336C007314F3 /* ExchangeModel.swift in Sources */,
+				D6844C5C26329DA700CB0962 /* CurrenciesViewController.swift in Sources */,
 				D63C8E2126321921007314F3 /* Constants.swift in Sources */,
 				D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */,
 				D63C8E3426321E47007314F3 /* AlertView.swift in Sources */,
