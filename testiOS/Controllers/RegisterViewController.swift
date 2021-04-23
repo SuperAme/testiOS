@@ -15,6 +15,7 @@ class RegisterViewController: UIViewController {
     @IBOutlet weak var registerBtn: UIButton!
     override func viewDidLoad() {
         super.viewDidLoad()
+        registerBtn.layer.cornerRadius = 10
     }
     @IBAction func registerButton(_ sender: UIButton) {
         if let email = emailTextField.text, let password = passwordTextField.text {

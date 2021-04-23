@@ -7,6 +7,7 @@
 
 import Foundation
 import UIKit
+import Firebase
 
 class DashboardViewController: UIViewController {
     
@@ -35,6 +36,15 @@ class DashboardViewController: UIViewController {
             showMinusAlert()
         default:
             break;
+        }
+    }
+    @IBAction func logOutPressed(_ sender: UIBarButtonItem) {
+        let firebaseAuth = Auth.auth()
+        do {
+            try firebaseAuth.signOut()
+            navigationController?.popToRootViewController(animated: true)
+        } catch let signOutError as NSError{
+            AlertView.instance.showAlert(title: "Error", message: signOutError.localizedDescription, alertType: .failure)
         }
     }
     
