@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		D632CB302632550000B2E58A /* User+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D632CB2C2632550000B2E58A /* User+CoreDataClass.swift */; };
+		D632CB312632550000B2E58A /* User+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D632CB2D2632550000B2E58A /* User+CoreDataProperties.swift */; };
+		D632CB322632550000B2E58A /* Finance+CoreDataClass.swift in Sources */ = {isa = PBXBuildFile; fileRef = D632CB2E2632550000B2E58A /* Finance+CoreDataClass.swift */; };
+		D632CB332632550000B2E58A /* Finance+CoreDataProperties.swift in Sources */ = {isa = PBXBuildFile; fileRef = D632CB2F2632550000B2E58A /* Finance+CoreDataProperties.swift */; };
 		D63C8E022632182A007314F3 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E012632182A007314F3 /* AppDelegate.swift */; };
 		D63C8E042632182A007314F3 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E032632182A007314F3 /* SceneDelegate.swift */; };
 		D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E052632182A007314F3 /* LoginViewController.swift */; };
@@ -25,6 +29,10 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		D632CB2C2632550000B2E58A /* User+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D632CB2D2632550000B2E58A /* User+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "User+CoreDataProperties.swift"; sourceTree = "<group>"; };
+		D632CB2E2632550000B2E58A /* Finance+CoreDataClass.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Finance+CoreDataClass.swift"; sourceTree = "<group>"; };
+		D632CB2F2632550000B2E58A /* Finance+CoreDataProperties.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Finance+CoreDataProperties.swift"; sourceTree = "<group>"; };
 		D63C8DFE2632182A007314F3 /* testiOS.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = testiOS.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D63C8E012632182A007314F3 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D63C8E032632182A007314F3 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -74,7 +82,7 @@
 		D63C8E002632182A007314F3 /* testiOS */ = {
 			isa = PBXGroup;
 			children = (
-				D63C8E61263232E6007314F3 /* Models */,
+				D63C8E61263232E6007314F3 /* Model */,
 				D63C8E1F2632190F007314F3 /* Helpers */,
 				D63C8E012632182A007314F3 /* AppDelegate.swift */,
 				D63C8E032632182A007314F3 /* SceneDelegate.swift */,
@@ -126,12 +134,16 @@
 			path = Helpers;
 			sourceTree = "<group>";
 		};
-		D63C8E61263232E6007314F3 /* Models */ = {
+		D63C8E61263232E6007314F3 /* Model */ = {
 			isa = PBXGroup;
 			children = (
+				D632CB2C2632550000B2E58A /* User+CoreDataClass.swift */,
+				D632CB2D2632550000B2E58A /* User+CoreDataProperties.swift */,
+				D632CB2E2632550000B2E58A /* Finance+CoreDataClass.swift */,
+				D632CB2F2632550000B2E58A /* Finance+CoreDataProperties.swift */,
 				D63C8E622632336C007314F3 /* ExchangeModel.swift */,
 			);
-			path = Models;
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -206,14 +218,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D632CB322632550000B2E58A /* Finance+CoreDataClass.swift in Sources */,
 				D63C8E632632336C007314F3 /* ExchangeModel.swift in Sources */,
 				D63C8E2126321921007314F3 /* Constants.swift in Sources */,
+				D632CB312632550000B2E58A /* User+CoreDataProperties.swift in Sources */,
 				D63C8E062632182A007314F3 /* LoginViewController.swift in Sources */,
 				D63C8E3426321E47007314F3 /* AlertView.swift in Sources */,
+				D632CB332632550000B2E58A /* Finance+CoreDataProperties.swift in Sources */,
 				D63C8E2726321B15007314F3 /* RegisterViewController.swift in Sources */,
 				D63C8E2E26321E07007314F3 /* registerAlert.swift in Sources */,
 				D63C8E022632182A007314F3 /* AppDelegate.swift in Sources */,
 				D63C8E042632182A007314F3 /* SceneDelegate.swift in Sources */,
+				D632CB302632550000B2E58A /* User+CoreDataClass.swift in Sources */,
 				D63C8E0C2632182A007314F3 /* testiOS.xcdatamodeld in Sources */,
 				D63C8E2426321AF9007314F3 /* DashboardViewController.swift in Sources */,
 			);
