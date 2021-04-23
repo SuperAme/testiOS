@@ -24,7 +24,6 @@
 		D63C8E3426321E47007314F3 /* AlertView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D63C8E3326321E47007314F3 /* AlertView.swift */; };
 		D6844C5C26329DA700CB0962 /* CurrenciesViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6844C5B26329DA700CB0962 /* CurrenciesViewController.swift */; };
 		D6844C5F2633142000CB0962 /* FinanceViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D6844C5E2633142000CB0962 /* FinanceViewController.swift */; };
-		D6844C8026334B8800CB0962 /* GoogleService-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = D6844C7F26334B8800CB0962 /* GoogleService-Info.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -48,7 +47,6 @@
 		D63C8E3326321E47007314F3 /* AlertView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertView.swift; sourceTree = "<group>"; };
 		D6844C5B26329DA700CB0962 /* CurrenciesViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CurrenciesViewController.swift; sourceTree = "<group>"; };
 		D6844C5E2633142000CB0962 /* FinanceViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceViewController.swift; sourceTree = "<group>"; };
-		D6844C7F26334B8800CB0962 /* GoogleService-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "GoogleService-Info.plist"; path = "../../../../Downloads/GoogleService-Info.plist"; sourceTree = "<group>"; };
 		E2BC7FD1ED05003A37A5331F /* Pods_testiOS.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_testiOS.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 /* End PBXFileReference section */
 
@@ -93,7 +91,6 @@
 		D63C8E002632182A007314F3 /* testiOS */ = {
 			isa = PBXGroup;
 			children = (
-				D6844C7F26334B8800CB0962 /* GoogleService-Info.plist */,
 				D63C8E61263232E6007314F3 /* Models */,
 				D63C8E1F2632190F007314F3 /* Helpers */,
 				D63C8E012632182A007314F3 /* AppDelegate.swift */,
@@ -228,7 +225,6 @@
 				D63C8E3126321E3A007314F3 /* AlertView.xib in Resources */,
 				D63C8E092632182A007314F3 /* Main.storyboard in Resources */,
 				D63C8E2B26321DB9007314F3 /* registerAlert.xib in Resources */,
-				D6844C8026334B8800CB0962 /* GoogleService-Info.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
